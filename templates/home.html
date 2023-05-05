@@ -1,46 +1,34 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Coupons</title>
+    <title>Groceries</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <style>
-      h1 {
-        font-size:40px;
-        font-family:monospace;
-        text-align:center;
-      }
-
-      #Coupons {
+      #Groceries {
+        height:450px;
         width: 100%;
-        heigh: 360px;
         object-fit:cover;
-      }
-      h2 {
-        font-size:32px;
-        font-family:monospace;
-        text-align:center;
-      }
-      h3{
-        text-align:center;
-      }
-      p {
-        font-weight:italic;
-      }
-      #container{
-        max-width:720px;
-        margin:0 auto 0 auto;
       }
     </style>
   </head>
   <body>
-    <div id ="container">
-      <h1>Coupons</h1>
-      <img id = "Coupons" src = "https://coupons-website.vidyagms9634.repl.co/static/Coupons.jpg">
-      <h2>About Coupons</h2>
-      <p>Coupons can take various forms – they can be public codes for a broad target group or personalized, unique coupon codes assigned to specific customers. They can be distributed online or offline in many forms (code, barcode, QR). They can be used in both B2B and B2C marketing. Moreover, coupons can be personalized or carry specific conditions. Coupons can be a very versatile marketing tool used effectively throughout the customer journey. 
-  Currently, coupon codes can take a digital, paper, or mixed format. As more customers expect digital coupons, traditional retailers who don’t deliver on that expectation, run a huge risk of losing customers. As highlighted by the COVID-19 crisis, the digitization of the retail landscape is inevitable. That does not mean that you cannot apply paper coupons in your funnel, but that digital coupons are simply a must, especially if your target group is tech-savvy. If you run a brick-and-mortar business, you can offer both or even better, make coupons available omnichannel and redeemable both offline and online.</p>
-      <h3>Click button to add Coupons</h3>
-        <div style="text-align:center">
-        <button> Add Coupons</button>
+    <div class="container">
+      <h1 class="text-center mt-2 mb-4">Groceries</h1>
+      <img class="img-fluid" id = "Groceries" src = "https://coupons-website.vidyagms9634.repl.co/static/Grocery.jpg">
+      <h2 class="text-center mt-2 mb-4">About Groceries</h2>
+      <p class="lead"> Grocery Shopping explores the social organization of grocery shopping by linking the lived experience of grocery shoppers and retail managers in the US with information transmitted by nutritionists, government employees, financial advisors, journalists, health care providers and marketers, who influence the way we think about and perform the work of shopping for a household's food.</p>
+      <h3 class="text-center mt-2 mb-4">Add Groceries</h3>
+      <div>
+        {% for item in items %}
+          <div>
+            <hfv4>{{item['name']}}</h4>8hufv
+          </div>
+        {% endfor %}
+      </div>
+        <div class="text-center">
+        <button class="btn btn-primary btn-lg"> Contact Us</button>
         </div>
       </div>
   </body>
