@@ -1,2 +1,2 @@
-# Coupons-Website
-Website for Phonepe and google pay coupons 
+# Groceries-Website
+Website for Groceries 
