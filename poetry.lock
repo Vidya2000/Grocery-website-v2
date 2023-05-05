@@ -45,6 +45,14 @@ async = ["asgiref (>=3.2)"]
 dotenv = ["python-dotenv"]
 
 [[package]]
+name = "fwmp3"
+version = "1.0.1"
+description = "python 3.8"
+category = "main"
+optional = false
+python-versions = ">=3.8,<4.0"
+
+[[package]]
 name = "itsdangerous"
 version = "2.1.2"
 description = "Safely pass data to untrusted environments and back."
@@ -91,13 +99,14 @@ watchdog = ["watchdog (>=2.3)"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "d7a65ba75d9fd1d70398a76955d93d28129b8c09a3b56e10fef71ce427090c8b"
+content-hash = "89c7bfade624cc25f2f4b403bda06c7773fa25a07f75841ee2d4001b9bda964b"
 
 [metadata.files]
 blinker = []
 click = []
 colorama = []
 flask = []
+fwmp3 = []
 itsdangerous = []
 jinja2 = []
 markupsafe = []
