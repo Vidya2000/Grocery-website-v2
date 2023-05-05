@@ -1,37 +1,38 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, jsonify
 
 app = Flask(__name__)
 
-ITEMS = [
-  {
-    'id':1,
-    'name':'ToorDal',
-    'price':'120',
-    'Weight':'1kg'
-  },
-  {
-    'id':1,
-    'name':'Almond',
-    'price':'330',
-    'Weight':'500g'
-  },
-{
-    'id':1,
-    'name':'Peanuts',
-    'price':'100',
-    'Weight':'1kg'
-  },
-  {
-    'id':1,
-    'name':'MoongDal',
-    'price':'80',
-    'Weight':'1kg'
-  },
-]
+ITEMS = [{
+  'id': 1,
+  'name': 'ToorDal',
+  'price': '120',
+  'Weight': '1kg'
+}, {
+  'id': 2,
+  'name': 'MoongDal',
+  'price': '80',
+  'Weight': '1kg'
+}, {
+  'id': 3,
+  'name': 'Cashew',
+  'price': '400',
+  'Weight': '500g'
+}, {
+  'id': 4,
+  'name': 'Almond',
+  'price': '330',
+  'Weight': '500g'
+}]
+
 
 @app.route("/")
-def hello_world():
+def hello_people():
   return render_template('home.html', items=ITEMS)
+
+
+@app.route("/api/items")
+def list_items():
+  return jsonify(ITEMS)
 
 
 if __name__ == "__main__":
