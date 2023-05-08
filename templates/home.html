@@ -14,6 +14,7 @@
     </style>
   </head>
   <body>
+    {% include 'nav.html' %}
     <div class="container">
       <h1 class="text-center mt-2 mb-4">Groceries</h1>
       <img class="img-fluid" id = "Groceries" src = "https://coupons-website.vidyagms9634.repl.co/static/Grocery.jpg">
@@ -26,8 +27,9 @@
         {% endfor %}
       </div>
         <div class="text-center">
-        <button class="btn btn-primary btn-lg"> Contact Us</button>
+        <a class="btn btn-primary btn-lg" href="mailto:grocery.ai?subject=Questions%20about%20Groceries&body=My%20name%3A%3Cyour%20name%20here%3E%0D%0A%0D%0AMy%20Question%3A%3CEnter%20question%20here%3E"> Contact Us</a>
         </div>
       </div>
+    {% include 'footer.html' %}
   </body>
 </html>
