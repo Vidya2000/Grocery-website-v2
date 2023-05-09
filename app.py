@@ -4,22 +4,22 @@ app = Flask(__name__)
 
 ITEMS = [{
   'id': 1,
-  'name': 'ToorDal',
+  'title': 'ToorDal',
   'price': '120',
   'Weight': '1kg'
 }, {
   'id': 2,
-  'name': 'MoongDal',
+  'title': 'MoongDal',
   'price': '80',
   'Weight': '1kg'
 }, {
   'id': 3,
-  'name': 'Cashew',
+  'title': 'Cashew',
   'price': '400',
   'Weight': '500g'
 }, {
   'id': 4,
-  'name': 'Almond',
+  'title': 'Almond',
   'price': '330',
   'Weight': '500g'
 }]
